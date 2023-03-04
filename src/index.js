@@ -16,18 +16,18 @@ export const prefetchVisible = (links, prefetchOnce=true) => {
     const observer = new IntersectionObserver((entries) => {
         for(const entry of entries) {
 
-            const { href } = entry.target;
+            const { href, pathname } = entry.target;
 
             if(entry.isIntersecting){
 
                 const canPrefetch = prefetchOnce
-                    ? !prefetchedLinks[href]
+                    ? !prefetchedLinks[pathname]
                     : true;
 
                 canPrefetch && fetch(href);
                 observer.unobserve(entry.target);
 
-                prefetchedLinks[href] = true;
+                prefetchedLinks[pathname] = true;
             }
         }
     });
@@ -54,15 +54,15 @@ export const prefetchHover = (links, prefetchOnce=true) => {
 
         link.addEventListener('mouseenter', () => {
 
-            const { href } = link;
+            const { href, pathname } = link;
 
             const canPrefetch = prefetchOnce
-                ? !prefetchedLinks[href]
+                ? !prefetchedLinks[pathname]
                 : true;
 
             if(canPrefetch){
 
-                req.onload = req.onerror = () => prefetchedLinks[href] = true;
+                req.onload = req.onerror = () => prefetchedLinks[pathname] = true;
                 req.open('GET', href, true);
                 req.send();
 
