@@ -11,6 +11,7 @@
         "types"
     ],
     "scripts": {
+        "preinstall": "npx only-allow pnpm",
         "dev": "rollup --config ./rollup.config.mjs --watch",
         "build": "rollup --config ./rollup.config.mjs"
     },
