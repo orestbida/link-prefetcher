@@ -1,38 +1,38 @@
 {
-  "name": "@orestbida/link-prefetcher",
-  "version": "0.1.1",
-  "description": "Eager link prefetcher",
-  "main": "dist/index.umd.js",
-  "module": "dist/index.esm.js",
-  "types": "types/index.d.ts",
-  "files": [
-    "src",
-    "dist",
-    "types"
-  ],
-  "scripts": {
-    "dev": "rollup --config ./rollup.config.mjs --watch",
-    "build": "rollup --config ./rollup.config.mjs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/orestbida/link-prefetcher"
-  },
-  "keywords": [
-    "link",
-    "prefetch",
-    "hover",
-    "fetch",
-    "fast"
-  ],
-  "author": "Orest Bida",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/orestbida/link-prefetcher/issues"
-  },
-  "homepage": "https://github.com/orestbida/link-prefetcher#readme",
-  "devDependencies": {
-    "@rollup/plugin-terser": "^0.4.0",
-    "rollup": "^3.18.0"
-  }
+    "name": "@orestbida/link-prefetcher",
+    "version": "0.1.1",
+    "description": "Eager link prefetcher",
+    "main": "dist/index.umd.js",
+    "module": "dist/index.esm.js",
+    "types": "types/index.d.ts",
+    "files": [
+        "src",
+        "dist",
+        "types"
+    ],
+    "scripts": {
+        "dev": "rollup --config ./rollup.config.mjs --watch",
+        "build": "rollup --config ./rollup.config.mjs"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/orestbida/link-prefetcher"
+    },
+    "keywords": [
+        "link",
+        "prefetch",
+        "hover",
+        "fetch",
+        "fast"
+    ],
+    "author": "Orest Bida",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/orestbida/link-prefetcher/issues"
+    },
+    "homepage": "https://github.com/orestbida/link-prefetcher#readme",
+    "devDependencies": {
+        "@rollup/plugin-terser": "^0.4.0",
+        "rollup": "^3.18.0"
+    }
 }
