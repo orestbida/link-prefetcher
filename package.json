@@ -1,5 +1,5 @@
 {
-  "name": "link-prefetcher",
+  "name": "@orestbida/link-prefetcher",
   "version": "0.1.0",
   "description": "Eager link prefetcher",
   "main": "dist/index.umd.js",
