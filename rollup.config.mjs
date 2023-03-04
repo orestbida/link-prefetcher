@@ -4,14 +4,6 @@ import pkg from './package.json' assert { type: "json"};
 
 const productionMode = !process.env.ROLLUP_WATCH;
 
-export const banner = `/*!
-* link-prefetcher ${pkg.version}
-* ${pkg.repository.url}
-* Author ${pkg.author}
-* Released under the ${pkg.license} License
-*/
-`;
-
 export const terserPlugin = terser({
     toplevel: true,
     format: {
@@ -39,14 +31,12 @@ export default defineConfig(
                 {
                     file: pkg.main,
                     format: 'umd',
-                    name: 'LinkPrefetcher',
-                    banner: banner
+                    name: 'LinkPrefetcher'
                 },
                 {
                     file: pkg.module,
                     format: "esm",
-                    exports: "named",
-                    banner: banner
+                    exports: "named"
                 }
             ],
             plugins: [
