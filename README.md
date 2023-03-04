@@ -11,7 +11,7 @@ Immediately prefetch all visible links.
 ## Installation
 
 ```bash
-npm i link-prefetcher
+npm i @orestbida/link-prefetcher
 ```
 
 ## Usage
