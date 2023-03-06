@@ -6,7 +6,7 @@ A tiny link prefetcher (yet another one in the sea of prefetching tools). Uses `
 Start prefetching as soon as possible. Abort if the cursor leaves the anchor tag before the prefetch process is done.
 
 ### `prefetchVisible()`
-Immediately prefetch all visible links.
+Immediately prefetch all visible links (⚠️ use with caution, can eat up a lot of bandwidth).
 
 ## Installation
 
