@@ -1,5 +1,9 @@
 # link-prefetcher
 
+![GitHub](https://img.shields.io/github/license/orestbida/link-prefetcher?label=License)
+![GitHub file size in bytes](https://img.shields.io/github/size/orestbida/link-prefetcher/dist/index.esm.js?label=Size)
+[![Build](https://github.com/orestbida/link-prefetcher/actions/workflows/build.yml/badge.svg)](https://github.com/orestbida/link-prefetcher/actions/workflows/build.yml)
+
 A tiny link prefetcher (yet another one in the sea of prefetching tools). Uses `fetch`/`xhr` to prefetch links rather than the `link` tag.
 
 ### `prefetchHover()`
