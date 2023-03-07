@@ -6,22 +6,20 @@ declare namespace LinkPrefetcher {
     /**
      * Keep track of prefetched links
      */
-    const prefetchedLinks: { [href: string]: boolean }
+    const prefetchedLinks: { [pathname: string]: boolean }
 
     /**
      * Prefetch links on hover.
      */
     function prefetchHover(
-        links?: NodeListOf<HTMLAnchorElement> | HTMLAnchorElement[],
-        prefetchOnce?: boolean
+        links?: NodeListOf<HTMLAnchorElement> | HTMLAnchorElement[]
     ): void
 
     /**
      * Prefetch all visible links.
      */
     function prefetchVisible(
-        links?: NodeListOf<HTMLAnchorElement> | HTMLAnchorElement[],
-        prefetchOnce?: boolean
+        links?: NodeListOf<HTMLAnchorElement> | HTMLAnchorElement[]
     ): void
 }
 
