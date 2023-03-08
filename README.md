@@ -31,7 +31,7 @@ or
 <script defer src="dist/index.umd.js"></script>
 <script>
     window.addEventListener('load', () => {
-        LinkPrefetcher.hoverPrefetch()
+        LinkPrefetcher.prefetchHover()
     });
 </script>
 ```
