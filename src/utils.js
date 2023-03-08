@@ -13,4 +13,4 @@ export const getValidLinks = (links) => [...(links || document.querySelectorAll(
  * @param {(keyof WindowEventMap)[]} type
  * @param {(ev: Event) => {}} fn
  */
-export const addEvents = (el, type, fn) => type.forEach(type => el.addEventListener(type, fn));
+export const addEvents = (el, type, fn) => type.forEach(type => el.addEventListener(type, fn, { passive: true }));
