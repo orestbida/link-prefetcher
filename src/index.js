@@ -29,7 +29,7 @@ export const prefetchVisible = (links) => {
         }
     });
 
-    getValidLinks(links).forEach(observer.observe);
+    getValidLinks(links).forEach(link => observer.observe(link));
 }
 
 /**
