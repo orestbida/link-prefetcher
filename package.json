@@ -34,6 +34,6 @@
     "homepage": "https://github.com/orestbida/link-prefetcher#readme",
     "devDependencies": {
         "@rollup/plugin-terser": "^0.4.0",
-        "rollup": "^3.18.0"
+        "rollup": "^3.20.1"
     }
 }
