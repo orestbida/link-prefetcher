@@ -6,7 +6,7 @@ export const validLink = (link) => link.host === location.host && link.pathname 
 /**
  * @param {NodeListOf<HTMLAnchorElement>} [links]
  */
-export const getValidLinks = (links) => [...(links || document.querySelectorAll('a'))].filter(validLink);
+export const getValidLinks = (links) => Array.from(links || document.querySelectorAll('a')).filter(validLink);
 
 /**
  * @param {HTMLElement} el
